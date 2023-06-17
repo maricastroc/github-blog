@@ -19,7 +19,7 @@ export const DetailsSummaryHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.9rem;
 
   a {
     color: ${(props) => props.theme['blue-500']};
@@ -29,6 +29,10 @@ export const DetailsSummaryHeader = styled.div`
 
   svg {
     margin-top: -0.1rem;
+  }
+
+  @media (min-width: 680px) {
+    margin-bottom: 1.25rem;
   }
 `
 
@@ -53,7 +57,7 @@ export const UrlContent = styled.div`
 `
 
 export const IconsContainer = styled.div`
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
@@ -61,11 +65,17 @@ export const IconsContainer = styled.div`
   svg {
     color: ${(props) => props.theme['base-label']};
     font-size: 1.125rem;
+    width: 1rem;
   }
 
   @media (min-width: 680px) {
+    margin-top: 1.5rem;
     flex-direction: row;
     gap: 1.8rem;
+
+    svg {
+      width: auto;
+    }
   }
 `
 
@@ -74,10 +84,12 @@ export const IconItem = styled.div`
   gap: 0.5rem;
 
   p {
+    font-size: 0.9rem;
     color: ${(props) => props.theme['base-span']};
   }
 
   a {
+    font-size: 0.9rem;
     color: ${(props) => props.theme['base-span']};
     border-bottom: solid 1px transparent;
 
@@ -91,6 +103,13 @@ export const IconItem = styled.div`
 
     &:hover {
       border-bottom: solid 1px ${(props) => props.theme['base-span']};
+    }
+  }
+
+  @media (min-width: 680px) {
+    p,
+    a {
+      font-size: 1rem;
     }
   }
 `
@@ -142,8 +161,14 @@ export const BarFill = styled.span<{ width: number }>`
 `
 export const TagsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 0.5rem;
+
+  @media (min-width: 680px) {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 `
 
 export const TagItem = styled.div`
@@ -152,10 +177,10 @@ export const TagItem = styled.div`
   color: ${(props) => props.theme['base-span']};
 
   strong {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
     span {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -180,6 +205,16 @@ export const TagItem = styled.div`
 
     &.javascript {
       background-color: ${(props) => props.theme['base-javascript']};
+    }
+  }
+
+  @media (min-width: 680px) {
+    strong {
+      font-size: 0.9rem;
+
+      span {
+        font-size: 0.9rem;
+      }
     }
   }
 `
