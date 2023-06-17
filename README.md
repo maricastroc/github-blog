@@ -1,29 +1,26 @@
 # Github-Blog
-<p align="center">
-    <img alt="Print" src="/print.png" width="800px" />
-</p>
+![github-blog](https://github.com/maricastroc/github-repos/assets/121824373/66dba75c-abf3-499b-9d34-decc5f74fbf4)
 
-<br/>
-<h2>:books: Project Description</h2>
-<p>In this project, I developed a comprehensive 3-page website that showcases all repositories belonging to a GitHub user, providing detailed information about each repository, including all associated issues. The application includes the following features</p>
+## 📚 Project Description
 
-<li>User profile listing with image, number of followers, name and other information available through the GitHub API.</li>
-<li>Listing of all user repositories, with title, description and specification of the predominant language, with search bar for filtering the results</li>
-<li>Listing of all issues in the repository with a short summary of its contents, with search bar for filtering the results</li>
-<li>Listing the details of a specific issue</li>
-<br/>
-<h2>:pushpin: What did I learn?</h2>
+In this project, I developed a comprehensive 3-page website that showcases all repositories belonging to a GitHub user, providing detailed information about each repository. The application includes the following features.
 
-<p>In this project, I had the opportunity to deepen my understanding of passing parameters through application routes. I utilized the axios library to handle API requests and gained experience in applying search filters.</p>
+- User profile listing with image, number of followers, name and other information available through the GitHub API.
+- Listing of all user repositories, with title, description and specification of the predominant language, with search bar for filtering the results
+- Provide a list of repository details, including the creation date, percentage of each language used, homepage link, and display the content of the readme file.
 
-<p>Furthermore, I leveraged the react-markdown and react-syntax-highlighter libraries to convert GitHub issue markdown into HTML format and beautifully highlight code syntax within text blocks.</p>
 
-<br/>
-<h2>:mag: Links</h2>
-<li><a href="https://maricastroc-github-blog.netlify.app/" target="_blank">Preview Site</a></li>
-<br/>
-<h2>:computer: My Process</h2>
-<h3>Built with:</h3>
+### 📌 What did I learn?
+
+In this project, I had the opportunity to deepen my understanding of passing parameters through application routes. I utilized the axios library to handle API requests and gained experience in applying search filters.
+
+Furthermore, I leveraged the react-markdown and react-syntax-highlighter libraries to convert GitHub readme file of each repository into HTML format and beautifully highlight code syntax within text blocks.
+
+## 🔍 Links
+[Preview Site](https://maricastroc-github-blog.netlify.app/)
+
+## 💻 My Process
+### Built with:
 
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
@@ -36,7 +33,7 @@
 - [Prettier](https://prettier.io/)
 <br/>
 
-<h2>:information_source: How to run the application?</h2>
+## ℹ️ How to run the application?
 
 > Clone the repository:
 
@@ -56,38 +53,4 @@ npm install
 npm run dev
 ```
 
-> :fast_forward: Access [http://localhost:3000](http://localhost:3000) to view the web application.
-<br/>
-
-<h2>:coffee: Authors</h2>
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="http://github.com/maricastroc/">
-        <img src="https://avatars.githubusercontent.com/u/121824373?s=400v=4" width="100px;" alt="Mariana Castro"/>
-        <br />
-        <sub>
-          <b>Mariana Castro</b>
-        </sub>
-       </a>
-       <br />
-       <a href="https://www.linkedin.com/in/mariana-castro-297586264/" title="Linkedin">@maricastroc</a>
-       <br />
-       <a href="https://github.com/maricastroc/github-blog" title="Code">💻</a>
-    </td>
-    <td align="center">
-      <a href="http://github.com/rocketseat/">
-        <img src="https://avatars.githubusercontent.com/u/28929274?s=200&v=4" width="100px;" alt="Rocketseat Logo"/>
-        <br />
-        <sub>
-          <b>Rocketseat</b>
-        </sub>
-       </a>
-       <br />
-       <a href="https://www.linkedin.com/school/rocketseat/" title="Linkedin">@rocketseat</a>
-       <br />
-       <a href="https://www.rocketseat.com.br/" title="Education Platform">🚀</a>
-    </td>
-  </tr>
-</table>
+> ⏩ Access [http://localhost:3000](http://localhost:3000) to view the web application.
