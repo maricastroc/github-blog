@@ -10,6 +10,11 @@ export const DetailsSummaryContainer = styled.div`
   margin-bottom: 1rem;
 `
 
+export const DetailsSummaryContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 export const DetailsSummaryHeader = styled.div`
   display: flex;
   justify-content: space-between;
@@ -47,17 +52,6 @@ export const UrlContent = styled.div`
   }
 `
 
-export const DetailsSummaryContent = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
-export const Heading = styled.h2`
-  font-size: 1.5rem;
-  color: ${(props) => props.theme['base-title']};
-  font-weight: 600;
-`
-
 export const IconsContainer = styled.div`
   margin-top: 1.5rem;
   display: flex;
@@ -81,5 +75,111 @@ export const IconItem = styled.div`
 
   p {
     color: ${(props) => props.theme['base-span']};
+  }
+
+  a {
+    color: ${(props) => props.theme['base-span']};
+    border-bottom: solid 1px transparent;
+
+    &.disabled {
+      cursor: not-allowed;
+
+      &:hover {
+        border-bottom: solid 1px transparent;
+      }
+    }
+
+    &:hover {
+      border-bottom: solid 1px ${(props) => props.theme['base-span']};
+    }
+  }
+`
+export const LanguagesContainer = styled.div`
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+`
+
+export const BarContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 20rem;
+`
+
+export const BarBackground = styled.div`
+  position: relative;
+  display: flex;
+  height: 10px;
+  border-radius: 4px;
+  background-color: ${(props) => props.theme['base-profile']};
+  width: 100%;
+`
+
+export const BarFill = styled.span<{ width: number }>`
+  height: 10px;
+  width: ${(props) => (props.width / 100) * 20}rem;
+  border: 1px;
+
+  &.html {
+    background-color: ${(props) => props.theme['base-html']};
+  }
+
+  &.typescript {
+    background-color: ${(props) => props.theme['base-typescript']};
+  }
+
+  &.css,
+  &.scss {
+    background-color: ${(props) => props.theme['base-css']};
+  }
+
+  &.javascript {
+    background-color: ${(props) => props.theme['base-javascript']};
+  }
+`
+export const TagsContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+`
+
+export const TagItem = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${(props) => props.theme['base-span']};
+
+  strong {
+    font-size: 0.9rem;
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  span {
+    margin-right: 0.3rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+
+    &.html {
+      background-color: ${(props) => props.theme['base-html']};
+    }
+
+    &.typescript {
+      background-color: ${(props) => props.theme['base-typescript']};
+    }
+
+    &.css,
+    &.scss {
+      background-color: ${(props) => props.theme['base-css']};
+    }
+
+    &.javascript {
+      background-color: ${(props) => props.theme['base-javascript']};
+    }
   }
 `

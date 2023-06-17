@@ -1,7 +1,8 @@
 export const defaultTheme = {
-  'pink-500': '#D66397',
-  'orange-500': '#EA6A47',
-  'green-500': '#47A883',
+  'base-javascript': '#c6538c',
+  'base-css': '#563d7c',
+  'base-html': '#e5a22e',
+  'base-typescript': '#3178c6',
   'blue-500': '#3294F8',
   'base-title': '#E7EDF4',
   'base-subtitle': '#C4D4E3',

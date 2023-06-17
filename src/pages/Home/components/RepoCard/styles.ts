@@ -149,19 +149,19 @@ export const LanguageContainer = styled.div`
     background-color: ${(props) => props.theme['blue-500']};
 
     &.typescript {
-      background-color: ${(props) => props.theme['blue-500']};
+      background-color: ${(props) => props.theme['blue-typescript']};
     }
 
     &.javascript {
-      background-color: ${(props) => props.theme['pink-500']};
+      background-color: ${(props) => props.theme['pink-javascript']};
     }
 
     &.html {
-      background-color: ${(props) => props.theme['green-500']};
+      background-color: ${(props) => props.theme['green-html']};
     }
 
     &.css {
-      background-color: ${(props) => props.theme['orange-500']};
+      background-color: ${(props) => props.theme['orange-css']};
     }
   }
 `
