@@ -34,32 +34,32 @@ export function Home() {
 
   useEffect(() => {
     async function fetchUserData() {
-      try {
-        const response = await api.get(
-          'users/maricastroc/repos?sort=created&direction=desc',
+      const response = await api.get(
+        'users/maricastroc/repos?sort=created&direction=desc',
+      )
+
+      const reposWithoutReadMe = response.data.filter(
+        (repo: RepoProps) => repo.name !== 'maricastroc',
+      )
+
+      if (keywordValue) {
+        const filteredRepos = reposWithoutReadMe.filter(
+          (repo: any) =>
+            repo.name.includes(keywordValue) ||
+            (repo.description ?? '').includes(keywordValue),
         )
-
-        if (keywordValue) {
-          const filteredRepos = response.data.filter(
-            (repo: any) =>
-              repo.name.includes(keywordValue) ||
-              (repo.description ?? '').includes(keywordValue),
-          )
-          setReposNumber(filteredRepos.length)
-          setRepos(filteredRepos)
-          return
-        }
-        console.log(response.data)
-        setReposNumber(response.data.length)
-
-        setRepos(response.data)
-      } catch (error) {
-        console.log(error)
+        setReposNumber(filteredRepos.length)
+        setRepos(filteredRepos)
+        return
       }
+
+      setReposNumber(reposWithoutReadMe.length)
+
+      setRepos(reposWithoutReadMe)
     }
 
     fetchUserData()
-  })
+  }, [keywordValue])
 
   function handleUserInput(keyword?: string) {
     keyword ? setKeywordValue(keyword) : setKeywordValue('')
