@@ -10,7 +10,7 @@ In this project, I developed a comprehensive 3-page website that showcases all r
 - Provide a list of repository details, including the creation date, percentage of each language used, homepage link, and display the content of the readme file.
 
 
-### 📌 What did I learn?
+## 📌 What did I learn?
 
 In this project, I had the opportunity to deepen my understanding of passing parameters through application routes. I utilized the axios library to handle API requests and gained experience in applying search filters.
 
